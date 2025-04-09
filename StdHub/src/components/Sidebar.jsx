@@ -43,6 +43,10 @@ const Sidebar = () => {
 
 
       <nav className="d-flex flex-column gap-2">
+        {/* Logo */}
+        <NavLink to="/" className="navbar-brand fw-bold text-primary fs-3">
+          Study <span className="text-dark">Hubb</span>
+        </NavLink>
         {finalLinks.map((link, idx) => (
           <NavLink
             key={idx}
@@ -58,6 +62,7 @@ const Sidebar = () => {
             <span style={{ fontSize: "1.1rem" }}>{link.icon}</span>
             <span>{link.label}</span>
           </NavLink>
+
         ))}
       </nav>
     </aside>

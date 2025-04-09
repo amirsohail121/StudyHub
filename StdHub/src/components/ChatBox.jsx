@@ -18,7 +18,7 @@ const ChatBox = () => {
   };
 
   return (
-    <div className="d-flex flex-column border rounded shadow-sm" style={{ height: "80vh", maxWidth: "600px", margin: "auto" }}>
+    <div className="d-flex flex-column border rounded shadow-sm" style={{ height: "80vh", maxWidth: "100%", margin: "auto" }}>
       {/* Header */}
       <div className="bg-primary text-white p-3 rounded-top">
         <strong>Chat with Tutor</strong>

@@ -1,21 +1,14 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import ChatBox from "./components/ChatBox";
-import Signup from "./features/auth/Signup";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        {/* Other routes */}
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+      <Outlet />
       <Sidebar />
-      {/* <ChatBox /> */}
-
-      {/* Add Routes below */}
     </>
   );
 }
